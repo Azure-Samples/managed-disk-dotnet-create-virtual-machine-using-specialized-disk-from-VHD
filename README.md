@@ -4,7 +4,7 @@ platforms: .Net
 author: anuchandy
 ---
 
-#Getting Started with Managed - Create Virtual Machine Using Specialized Disk From Vhd - in .Net #
+# Getting Started with Managed - Create Virtual Machine Using Specialized Disk From Vhd - in .Net #
 
           Azure Compute sample for managing virtual machines.
            - Create an un-managed virtual machine from PIR image with data disks

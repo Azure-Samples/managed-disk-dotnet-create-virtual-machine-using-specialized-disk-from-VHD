@@ -4,8 +4,8 @@
 using Microsoft.Azure.Management.Compute.Fluent;
 using Microsoft.Azure.Management.Compute.Fluent.Models;
 using Microsoft.Azure.Management.Fluent;
-using Microsoft.Azure.Management.Resource.Fluent;
-using Microsoft.Azure.Management.Resource.Fluent.Core;
+using Microsoft.Azure.Management.ResourceManager.Fluent;
+using Microsoft.Azure.Management.ResourceManager.Fluent.Core;
 using Microsoft.Azure.Management.Samples.Common;
 using System;
 using System.Collections.Generic;
@@ -49,8 +49,8 @@ namespace CreateVirtualMachineUsingSpecializedDiskFromVhd
                         .WithRegion(region)
                         .WithNewResourceGroup(rgName)
                         .WithNewPrimaryNetwork("10.0.0.0/28")
-                        .WithPrimaryPrivateIpAddressDynamic()
-                        .WithNewPrimaryPublicIpAddress(publicIpDnsLabel)
+                        .WithPrimaryPrivateIPAddressDynamic()
+                        .WithNewPrimaryPublicIPAddress(publicIpDnsLabel)
                         .WithPopularLinuxImage(KnownLinuxVirtualMachineImage.UbuntuServer16_04_Lts)
                         .WithRootUsername(userName)
                         .WithRootPassword(password)
@@ -79,7 +79,7 @@ namespace CreateVirtualMachineUsingSpecializedDiskFromVhd
 
                 // Gets the specialized OS and Data disk VHDs of the virtual machine
                 //
-                var specializedOSVhdUri = linuxVM.OsUnmanagedDiskVhdUri;
+                var specializedOSVhdUri = linuxVM.OSUnmanagedDiskVhdUri;
                 var dataVhdUris = new List<string>();
                 foreach (var dataDisk  in  linuxVM.UnmanagedDataDisks.Values)
                 {
@@ -142,9 +142,9 @@ namespace CreateVirtualMachineUsingSpecializedDiskFromVhd
                         .WithRegion(region)
                         .WithExistingResourceGroup(rgName)
                         .WithNewPrimaryNetwork("10.0.0.0/28")
-                        .WithPrimaryPrivateIpAddressDynamic()
-                        .WithoutPrimaryPublicIpAddress()
-                        .WithSpecializedOsDisk(osDisk, OperatingSystemTypes.Linux)
+                        .WithPrimaryPrivateIPAddressDynamic()
+                        .WithoutPrimaryPublicIPAddress()
+                        .WithSpecializedOSDisk(osDisk, OperatingSystemTypes.Linux)
                         .WithExistingDataDisk(dataDisks[0])
                         .WithExistingDataDisk(dataDisks[1], 1, CachingTypes.ReadWrite)
                         .WithSize(VirtualMachineSizeTypes.StandardD3V2)
@@ -210,7 +210,7 @@ namespace CreateVirtualMachineUsingSpecializedDiskFromVhd
 
                 var azure = Azure
                     .Configure()
-                    .WithLogLevel(HttpLoggingDelegatingHandler.Level.BASIC)
+                    .WithLogLevel(HttpLoggingDelegatingHandler.Level.Basic)
                     .Authenticate(credentials)
                     .WithDefaultSubscription();
 
