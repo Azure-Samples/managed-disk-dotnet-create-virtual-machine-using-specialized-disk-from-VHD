@@ -1,4 +1,0 @@
-C:\Sources\dotnet-samples\managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-VHD\bin\Debug\net452\CreateVirtualMachineUsingSpecializedDiskFromVhd.runtimeconfig.json
-C:\Sources\dotnet-samples\managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-VHD\bin\Debug\net452\CreateVirtualMachineUsingSpecializedDiskFromVhd.runtimeconfig.dev.json
-C:\Sources\dotnet-samples\managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-VHD\obj\Debug\net452\CreateVirtualMachineUsingSpecializedDiskFromVhd.csproj.CreateVirtualMachineUsingSpecializedDiskFromVhd.exe.config
-C:\Sources\dotnet-samples\managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-VHD\obj\Debug\net452\CreateVirtualMachineUsingSpecializedDiskFromVhd.csproj.CoreCompileInputs.cache

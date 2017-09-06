@@ -1,2 +1,0 @@
-C:\Sources\dotnet-samples\managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-VHD\bin\Debug\netstandard1.6\CreateVirtualMachineUsingSpecializedDiskFromVhd.deps.json
-C:\Sources\dotnet-samples\managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-VHD\obj\Debug\netstandard1.6\CreateVirtualMachineUsingSpecializedDiskFromVhd.csproj.CoreCompileInputs.cache
