@@ -1,10 +1,10 @@
 ---
-services: Managed
-platforms: .Net
+services: Compute
+platforms: dotnet
 author: anuchandy
 ---
 
-# Getting Started with Managed - Create Virtual Machine Using Specialized Disk From Vhd - in .Net #
+# Getting started with creating a virtual machine by importing a specialized operating system disk VHD #
 
           Azure Compute sample for managing virtual machines.
            - Create an un-managed virtual machine from PIR image with data disks
@@ -17,7 +17,7 @@ author: anuchandy
 
 To run this sample:
 
-Set the environment variable `AZURE_AUTH_LOCATION` with the full path for an auth file. See [how to create an auth file](https://github.com/Azure/azure-sdk-for-net/blob/Fluent/AUTH.md).
+Set the environment variable `AZURE_AUTH_LOCATION` with the full path for an auth file. See [how to create an auth file](https://github.com/Azure/azure-libraries-for-java/blob/master/AUTH.md).
 
     git clone https://github.com/Azure-Samples/managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-VHD.git
 
