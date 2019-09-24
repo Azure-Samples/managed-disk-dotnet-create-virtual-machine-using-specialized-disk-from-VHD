@@ -8,6 +8,7 @@ extensions:
 - services: Compute
 - platforms: dotnet
 description: "Azure Compute sample for managing virtual machines."
+urlFragment: getting-started-creating-vms
 ---
 
 # Getting started with creating a virtual machine by importing a specialized operating system disk VHD #
