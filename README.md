@@ -14,6 +14,7 @@ urlFragment: getting-started-creating-vms
 # Getting started with creating a virtual machine by importing a specialized operating system disk VHD #
 
  Azure Compute sample for managing virtual machines.
+ 
   - Create an un-managed virtual machine from PIR image with data disks
   - Create managed disks from specialized un-managed OS and Data disk of virtual machine
   - Create a virtual machine by attaching the managed disks
