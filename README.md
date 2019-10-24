@@ -4,6 +4,8 @@ languages:
 - csharp
 products:
 - azure
+- dotnet
+- azure-virtual-machines
 extensions:
 - services: Compute
 - platforms: dotnet
@@ -11,7 +13,7 @@ description: "Azure Compute sample for managing virtual machines."
 urlFragment: getting-started-creating-vms
 ---
 
-# Getting started with creating a virtual machine by importing a specialized operating system disk VHD #
+# Get started creating an Azure virtual machine by importing a specialized operating system disk VHD
 
 Azure Compute sample for managing virtual machines.
  
@@ -19,7 +21,6 @@ Azure Compute sample for managing virtual machines.
 - Create managed disks from specialized un-managed OS and Data disk of virtual machine
 - Create a virtual machine by attaching the managed disks
 - Get SAS Uri to the virtual machine's managed disks
-
 
 ## Running this sample
 
